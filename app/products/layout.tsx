@@ -3,7 +3,7 @@ const ProductsLayout = ({ children }: LayoutProps<"/">) => {
     <>
       {children}
       <br/>
-      <h1>Featured Products</h1>
+      <h2>Featured Products</h2>
     </>
   );
 };

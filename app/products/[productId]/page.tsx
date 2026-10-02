@@ -54,6 +54,12 @@ const ProductDetails = async ({
   params: Promise<{ productId: string }>;
 }) => {
   const { productId } = await params;
+
+  // Test error boundary intentionally.
+  if (productId === "test-error") {
+    throw new Error("This is a test error for the products error boundary.");
+  }
+
   return <div>Product Details {productId}</div>;
 };
 
